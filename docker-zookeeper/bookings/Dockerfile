@@ -20,4 +20,4 @@ ENV JAVA_ENV=PRODUCTION
 
 EXPOSE 8080
 
-CMD ["java", "-server", "-cp", "target/classes:target/dependency/*", "com.kumuluz.ee.EeApplication"]
+CMD ["java", "-server", "-cp", "bookings/target/classes:target/dependency/*", "com.kumuluz.ee.EeApplication"]

@@ -2,7 +2,7 @@ FROM java:openjdk-8u45-jdk
 
 MAINTAINER tilen.faganel@me.com
 
-RUN apt-get update -qq && apt-get install -y wget git
+RUN apt-get update -qq && apt-get install -y wget
 
 RUN wget http://mirrors.sonic.net/apache/maven/maven-3/3.3.3/binaries/apache-maven-3.3.3-bin.tar.gz && \
        tar -zxf apache-maven-3.3.3-bin.tar.gz && rm apache-maven-3.3.3-bin.tar.gz && \
@@ -14,10 +14,10 @@ WORKDIR /app
 
 ADD . /app
 
-RUN mvn clean package -Pdeploy
+RUN mvn clean package
 
 ENV JAVA_ENV=PRODUCTION
 
 EXPOSE 8080
 
-CMD ["java", "-server", "-cp", "target/classes:target/dependency/*", "com.kumuluz.ee.EeApplication"]
+CMD ["java", "-server", "-cp", "ui/target/classes:target/dependency/*", "com.kumuluz.ee.EeApplication"]
