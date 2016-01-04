@@ -22,9 +22,9 @@ public class Route {
 
     private String name;
 
-    private String start;
+    private String startPlace;
 
-    private String end;
+    private String endPlace;
 
     @Temporal(TemporalType.TIMESTAMP)
     private Date duration;
@@ -48,20 +48,20 @@ public class Route {
         this.name = name;
     }
 
-    public String getStart() {
-        return start;
+    public String getStartPlace() {
+        return startPlace;
     }
 
-    public void setStart(String start) {
-        this.start = start;
+    public void setStartPlace(String start) {
+        this.startPlace = start;
     }
 
-    public String getEnd() {
-        return end;
+    public String getEndPlace() {
+        return endPlace;
     }
 
-    public void setEnd(String end) {
-        this.end = end;
+    public void setEndPlace(String end) {
+        this.endPlace = end;
     }
 
     public Date getDuration() {
