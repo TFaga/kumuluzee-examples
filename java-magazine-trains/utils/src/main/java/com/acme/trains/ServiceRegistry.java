@@ -39,7 +39,7 @@ public class ServiceRegistry {
     public void registerService(String name, String uri) {
 
         try {
-            String node = "/service/" + name;
+            String node = "/services/" + name;
 
             if (zookeeper.checkExists().forPath(node) == null) {
 
@@ -69,11 +69,9 @@ public class ServiceRegistry {
     public String discoverServiceURI(String name) {
 
         try {
-            String node = "/services/" + name + "/_";
+            String node = "/services/" + name;
 
             List<String> uris = zookeeper.getChildren().forPath(node);
-
-            System.out.println(uris.get(0));
 
             return new String(zookeeper.getData().forPath(ZKPaths.makePath(node, uris.get(0))));
         } catch (Exception ex) {
