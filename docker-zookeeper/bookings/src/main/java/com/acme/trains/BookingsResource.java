@@ -20,7 +20,6 @@ import javax.ws.rs.core.Response;
 @RequestScoped
 public class BookingsResource {
 
-
     @PersistenceContext(unitName = "trains")
     private EntityManager em;
 
@@ -35,7 +34,6 @@ public class BookingsResource {
 
         return Response.ok(o).build();
     }
-
 
     @POST
     public Response createBooking(Booking b) {
