@@ -2,6 +2,9 @@ package com.acme.trains;
 
 import com.acme.trains.models.Booking;
 
+import java.awt.print.Book;
+import java.util.List;
+
 import javax.enterprise.context.RequestScoped;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -22,6 +25,14 @@ public class BookingsResource {
 
     @PersistenceContext(unitName = "trains")
     private EntityManager em;
+
+    @GET
+    public Response getBookings() {
+
+        List<Booking> bookings = em.createNamedQuery("Booking.findAll", Booking.class).getResultList();
+
+        return Response.ok(bookings).build();
+    }
 
     @GET
     @Path("/{id}")

@@ -15,7 +15,7 @@ public class BookingsBean {
     public List getAllBookings() {
 
         return ClientBuilder.newClient()
-                .target(services.discoverServiceURI("trains-booking")).path("routes")
+                .target(services.discoverServiceURI("trains-booking")).path("bookings")
                 .request().get(List.class);
     }
 }
