@@ -69,9 +69,12 @@ public class ServiceRegistry {
     public String discoverServiceURI(String name) {
 
         try {
-            String node = "/services/" + name;
+            String node = "/services/" + name + "/_";
 
             List<String> uris = zookeeper.getChildren().forPath(node);
+
+            System.out.println(uris.get(0));
+
             return new String(zookeeper.getData().forPath(ZKPaths.makePath(node, uris.get(0))));
         } catch (Exception ex) {
             throw new RuntimeException(ex.getLocalizedMessage());
