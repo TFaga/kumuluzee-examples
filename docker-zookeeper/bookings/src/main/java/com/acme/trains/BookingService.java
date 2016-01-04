@@ -22,6 +22,8 @@ public class BookingService  {
     @PostConstruct
     public void registerService() {
 
+        System.out.println("test, test");
+
         services.registerService(serviceName, endpointURI);
     }
 

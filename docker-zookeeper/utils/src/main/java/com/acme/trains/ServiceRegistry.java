@@ -24,7 +24,7 @@ public class ServiceRegistry {
     public ServiceRegistry() {
 
         try {
-            String zookeeperUri = System.getenv("ZOOKEEPER_URL");
+            String zookeeperUri = System.getenv("ZOOKEEPER_URI");
 
             zookeeper = CuratorFrameworkFactory.newClient(zookeeperUri, new RetryNTimes(5, 1000));
 
