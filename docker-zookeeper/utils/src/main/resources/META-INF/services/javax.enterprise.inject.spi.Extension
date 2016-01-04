@@ -1,1 +1,1 @@
-org.javaee7.wildfly.samples.services.eager.EagerExtension
+com.acme.trains.EagerExtension
