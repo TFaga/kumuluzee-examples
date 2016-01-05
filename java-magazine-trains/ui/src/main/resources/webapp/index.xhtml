@@ -5,7 +5,7 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
 <h:head>
-    <title>All available bookings</title>
+    <title>All available bookings and routes</title>
 </h:head>
 
 <h:body>
@@ -21,6 +21,34 @@
             <f:facet name="header">Date of order</f:facet>
 
             #{booking.orderDate}
+        </h:column>
+
+    </h:dataTable>
+
+    <h:dataTable value="#{routesBean.allRoutes}" var="route">
+
+        <h:column>
+            <f:facet name="header">Route Name</f:facet>
+
+            #{route.name}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Route start location</f:facet>
+
+            #{route.start}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Route end location</f:facet>
+
+            #{route.end}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Route duration</f:facet>
+
+            #{route.duration}
         </h:column>
 
     </h:dataTable>

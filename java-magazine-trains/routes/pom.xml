@@ -9,6 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <name>Java Magazine KumuluzEE Docker with Zookeeper routes</name>
+    <description>Routes microservice for the KumuluzEE example using Docker and Zookeeper for Java Magazine</description>
+
     <artifactId>java-magazine-trains-routes</artifactId>
 
     <dependencies>
