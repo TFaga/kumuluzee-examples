@@ -43,6 +43,11 @@ version of the framework.
 
 We recommend that use the tagged examples as the latest ones may not be finished.
 
+The following examples are awailable:
+
+- [java-magazine-trains](https://github.com/TFaga/kumuluzee-examples/tree/master/java-magazine-trains)
+- [microservices-simple](https://github.com/TFaga/kumuluzee-examples/tree/master/microservices-simple)
+
 # Requirements
 
 In order to run these examples as they are intended, you will need the following:
@@ -72,14 +77,16 @@ In order to run these examples as they are intended, you will need the following
 
 1. Clone the Git repository containing the examples:
 
-    `git clone git@github.com:TFaga/kumuluzee-examples.git`
+    ```
+    git clone git@github.com:TFaga/kumuluzee-examples.git
+    ```
     
 2. Checkout the desired tagged version of the examples and the KumuluzEE framework (alternatively skip this step if you want the latest and greatest)
 
-```
+    ```
      cd kumuluzee-examples
      git checkout v2.0.0
-```
+    ```
     
 To run a specific example please refer to the specific README file of the example as each one can be a bit different.
 Most of the time you either build and run it directly with a maven command or build Docker containers and run them.
@@ -90,9 +97,9 @@ Recent changes can be viewed on Github on the [Releases Page](https://github.com
 
 ## Contribute
 
-See the [contributing docs](https://github.com/TFaga/KumuluzEE/blob/master/CONTRIBUTING.md)
+See the [contributing docs](https://github.com/TFaga/kumuluzee-examples/blob/master/CONTRIBUTING.md)
 
-When submitting an issue, please follow the [guidelines](https://github.com/TFaga/KumuluzEE/blob/master/CONTRIBUTING.md#bugs).
+When submitting an issue, please follow the [guidelines](https://github.com/TFaga/kumuluzee-examples/blob/master/CONTRIBUTING.md#bugs).
 
 Issues related to KumuluzEE itself should be submitted at https://github.com/TFaga/KumuluzEE/issues.
 
