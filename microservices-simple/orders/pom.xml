@@ -9,6 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <name>Simple microservices example with KumuluzEE orders</name>
+    <description>Orders microservice example using KumuluzEE using a shared database module</description>
+
     <artifactId>microservices-simple-orders</artifactId>
 
     <dependencies>
