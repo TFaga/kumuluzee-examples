@@ -49,29 +49,37 @@ In order to run these examples as they are intended, you will need the following
 
 1. Java 8 (or newer), you can use any implementation:
     * If you have installed Java, you can check the version by typing the following in a command line:
-
+        
+        ```
         java -version
+        ```
 
 2. Maven 3.2.1 (or newer):
     * If you have installed Maven, you can check the version by typing the following in a command line:
-    
+        
+        ```
         mvn -version
+        ```
         
 3. Git:
     * If you have installed Git, you can check the version by typing the following in a command line:
     
+        ```
         git --version
+        ```
         
 # Usage
 
 1. Clone the Git repository containing the examples:
 
-    git clone git@github.com:TFaga/kumuluzee-examples.git
+    `git clone git@github.com:TFaga/kumuluzee-examples.git`
     
 2. Checkout the desired tagged version of the examples and the KumuluzEE framework (alternatively skip this step if you want the latest and greatest)
 
-    cd kumuluzee-examples
-    git checkout v2.0.0
+```
+     cd kumuluzee-examples
+     git checkout v2.0.0
+```
     
 To run a specific example please refer to the specific README file of the example as each one can be a bit different.
 Most of the time you either build and run it directly with a maven command or build Docker containers and run them.
@@ -86,7 +94,7 @@ See the [contributing docs](https://github.com/TFaga/KumuluzEE/blob/master/CONTR
 
 When submitting an issue, please follow the [guidelines](https://github.com/TFaga/KumuluzEE/blob/master/CONTRIBUTING.md#bugs).
 
-Issues related to KumuluzEE itself should be raised at https://github.com/TFaga/KumuluzEE/issues.
+Issues related to KumuluzEE itself should be submitted at https://github.com/TFaga/KumuluzEE/issues.
 
 ## License
 
