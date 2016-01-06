@@ -1,5 +1,5 @@
 # KumuluzEE Examples
-[![Build Status](https://img.shields.io/travis/TFaga/KumuluzEE/master.svg?style=flat)](https://travis-ci.org/TFaga/KumuluzEE)
+[![Build Status](https://travis-ci.org/TFaga/kumuluzee-examples.svg?branch=master)](https://travis-ci.org/TFaga/kumuluzee-examples)
 
 > These examples demonstrate how to get started using KumuluzEE. They provide small, specific, working examples that can be used as a reference for your own projects.
 
@@ -14,7 +14,7 @@ is is often recommended that you separate microservices by repository as well.
 
 Examples will be constantly added over time.
 
-# About
+## About
 
 The examples demonstrate many different use cases for using KumuluzEE to create self-sustaining packages. The latest
 version of the examples will always use the latest version of KumuluzEE. Therefor it is recommended when running the
@@ -48,7 +48,7 @@ The following examples are awailable:
 - [java-magazine-trains](https://github.com/TFaga/kumuluzee-examples/tree/master/java-magazine-trains)
 - [microservices-simple](https://github.com/TFaga/kumuluzee-examples/tree/master/microservices-simple)
 
-# Requirements
+## Requirements
 
 In order to run these examples as they are intended, you will need the following:
 
@@ -73,7 +73,7 @@ In order to run these examples as they are intended, you will need the following
         git --version
         ```
         
-# Usage
+## Usage
 
 1. Clone the Git repository containing the examples:
 
