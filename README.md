@@ -84,8 +84,8 @@ In order to run these examples as they are intended, you will need the following
 2. Checkout the desired tagged version of the examples and the KumuluzEE framework (alternatively skip this step if you want the latest and greatest)
 
     ```
-     cd kumuluzee-examples
-     git checkout v2.0.0
+    cd kumuluzee-examples
+    git checkout v2.0.0
     ```
     
 To run a specific example please refer to the specific README file of the example as each one can be a bit different.
