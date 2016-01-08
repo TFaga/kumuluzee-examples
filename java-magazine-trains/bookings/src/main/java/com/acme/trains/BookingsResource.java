@@ -18,7 +18,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 /**
- * <p>Contains JAX-RS interface and business logic for bookings</p>
+ * <p>Contains JAX-RS interface and business logic for bookings.</p>
  *
  * @author Tilen Faganel
  * @since 2.0.0
@@ -64,7 +64,7 @@ public class BookingsResource {
     }
 
     /**
-     * <p>Inserts the provided booking into the database</p>
+     * <p>Inserts the provided booking into the database.</p>
      *
      * @param b The booking object which will be created.
      * @return Response object containing the created booking.

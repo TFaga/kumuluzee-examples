@@ -71,7 +71,7 @@ public class ServiceRegistry {
     }
 
     /**
-     * <p>Unregisters the service with Zookeeper. Removes the entry for the specified name and uri if it exists</p>
+     * <p>Unregisters the service with Zookeeper. Removes the entry for the specified name and uri if it exists.</p>
      *
      * @param name The name of entry in service discovery, usually the services name.
      * @param uri The URI to be saved of the service specified in the name param.
@@ -88,7 +88,7 @@ public class ServiceRegistry {
     }
 
     /**
-     * <p>Searches the registry for the provided service name and returns its URI</p>
+     * <p>Searches the registry for the provided service name and returns its URI.</p>
      *
      * @param name The name of the service for which the URI was requested.
      * @return The URI of the requested service.

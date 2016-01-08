@@ -31,7 +31,7 @@ public class BookingService  {
     }
 
     /**
-     * <p>Registers the booking service endpoint with the service registry</p>
+     * <p>Registers the booking service endpoint with the service registry.</p>
      */
     @PostConstruct
     public void registerService() {
@@ -40,7 +40,7 @@ public class BookingService  {
     }
 
     /**
-     * <p>Unregisters the booking service endpoint with the service registry</p>
+     * <p>Unregisters the booking service endpoint with the service registry.</p>
      */
     @PreDestroy
     public void unregisterService() {

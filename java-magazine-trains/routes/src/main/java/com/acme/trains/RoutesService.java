@@ -31,7 +31,7 @@ public class RoutesService {
     }
 
     /**
-     * <p>Registers the routes service endpoint with the service registry</p>
+     * <p>Registers the routes service endpoint with the service registry.</p>
      */
     @PostConstruct
     public void registerService() {
@@ -40,7 +40,7 @@ public class RoutesService {
     }
 
     /**
-     * <p>Unregisters the routes service endpoint with the service registry</p>
+     * <p>Unregisters the routes service endpoint with the service registry.</p>
      */
     @PreDestroy
     public void unregisterService() {
