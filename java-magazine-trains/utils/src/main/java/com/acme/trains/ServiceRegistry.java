@@ -14,12 +14,21 @@ import java.util.concurrent.ConcurrentHashMap;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 
+/**
+ * <p>Manages the service registry API and the connection to the Zookeeper backend.</p>
+ *
+ * @author Tilen Faganel
+ * @since 2.0.0
+ */
 @ApplicationScoped
 public class ServiceRegistry {
 
     private final CuratorFramework zookeeper;
     private final ConcurrentHashMap<String, String> zonePaths;
 
+    /**
+     * <p>Retrieves the Zookeeper service URI from the environemnt and initiates the client.</p>
+     */
     @Inject
     public ServiceRegistry() {
 
@@ -36,6 +45,12 @@ public class ServiceRegistry {
         }
     }
 
+    /**
+     * <p>Registers the service with Zookeeper. Creates an ephemeral entry for the specified name and uri.</p>
+     *
+     * @param name The name of entry in service discovery, usually the services name.
+     * @param uri The URI to be saved of the service specified in the name param.
+     */
     public void registerService(String name, String uri) {
 
         try {
@@ -55,6 +70,12 @@ public class ServiceRegistry {
         }
     }
 
+    /**
+     * <p>Unregisters the service with Zookeeper. Removes the entry for the specified name and uri if it exists</p>
+     *
+     * @param name The name of entry in service discovery, usually the services name.
+     * @param uri The URI to be saved of the service specified in the name param.
+     */
     public void unregisterService(String name, String uri) {
 
         try {
@@ -66,6 +87,12 @@ public class ServiceRegistry {
         }
     }
 
+    /**
+     * <p>Searches the registry for the provided service name and returns its URI</p>
+     *
+     * @param name The name of the service for which the URI was requested.
+     * @return The URI of the requested service.
+     */
     public String discoverServiceURI(String name) {
 
         try {

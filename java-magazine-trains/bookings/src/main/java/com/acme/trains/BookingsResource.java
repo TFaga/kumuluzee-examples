@@ -17,6 +17,12 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+/**
+ * <p>Contains JAX-RS interface and business logic for bookings</p>
+ *
+ * @author Tilen Faganel
+ * @since 2.0.0
+ */
 @Path("/bookings")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
@@ -26,6 +32,11 @@ public class BookingsResource {
     @PersistenceContext(unitName = "trains")
     private EntityManager em;
 
+    /**
+     * <p>Queries the database and returns a list of all available bookings.</p>
+     *
+     * @return Response object containing the retrieved list of booking from the database.
+     */
     @GET
     public Response getBookings() {
 
@@ -34,6 +45,12 @@ public class BookingsResource {
         return Response.ok(bookings).build();
     }
 
+    /**
+     * <p>Queries the database and returns a specific booking based on the given id.</p>
+     *
+     * @param id The id of the wanted booking.
+     * @return Response object containing the requested booking, or empty with the NOT_FOUND status.
+     */
     @GET
     @Path("/{id}")
     public Response getBooking(@PathParam("id") Integer id) {
@@ -46,6 +63,12 @@ public class BookingsResource {
         return Response.ok(o).build();
     }
 
+    /**
+     * <p>Inserts the provided booking into the database</p>
+     *
+     * @param b The booking object which will be created.
+     * @return Response object containing the created booking.
+     */
     @POST
     public Response createBooking(Booking b) {
 
