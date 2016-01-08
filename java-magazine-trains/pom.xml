@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <groupId>com.kumuluz.ee.examples</groupId>
     <artifactId>java-magazine-trains</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>2.0.0-SNAPSHOT</version>
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
 
@@ -42,27 +42,27 @@
             <dependency>
                 <groupId>com.kumuluz.ee.examples</groupId>
                 <artifactId>java-magazine-trains-bookings</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.kumuluz.ee.examples</groupId>
                 <artifactId>java-magazine-trains-models</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.kumuluz.ee.examples</groupId>
                 <artifactId>java-magazine-trains-routes</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.kumuluz.ee.examples</groupId>
                 <artifactId>java-magazine-trains-ui</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.kumuluz.ee.examples</groupId>
                 <artifactId>java-magazine-trains-utils</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
+                <version>2.0.0-SNAPSHOT</version>
             </dependency>
 
             <dependency>
