@@ -17,6 +17,12 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;;
 
+/**
+ * <p>Contains JAX-RS interface and business logic for the orders.</p>
+ *
+ * @author Tilen Faganel
+ * @since 2.0.0
+ */
 @Path("/orders")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
@@ -26,6 +32,12 @@ public class OrdersResource {
     @PersistenceContext(unitName = "books")
     private EntityManager em;
 
+    /**
+     * <p>Queries the database and returns a specific order based on the given id.</p>
+     *
+     * @param id The id of the wanted book.
+     * @return Response object containing the requested book, or empty with the NOT_FOUND status.
+     */
     @GET
     @Path("/{id}")
     public Response getOrder(@PathParam("id") Integer id) {
@@ -38,6 +50,12 @@ public class OrdersResource {
         return Response.ok(o).build();
     }
 
+    /**
+     * <p>Creates the order for the provided book.</p>
+     *
+     * @param b The book object for which the order will be placed.
+     * @return Response object containing the created order.
+     */
     @POST
     public Response placeOrder(Book b) {
 
