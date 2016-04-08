@@ -25,7 +25,7 @@ The examples are tagged as well. The tags (eg. `v2.0.0`) will correspond to the 
 desired version of the framework that is used in the examples. Tha `master` branch will always use the latest snapshot version of the framework
 and the latest examples.
 
-If you wish to a snapshot version of KumuluzEE when running the examples, you must make sure you add the Sonatype snapshots
+If you wish to use a snapshot version of KumuluzEE when running the examples, you must make sure you add the Sonatype snapshots
 repository to your `pom.xml`. The `master` branch already contains the repository as it's targeted against the snapshot
 version of the framework.
 
