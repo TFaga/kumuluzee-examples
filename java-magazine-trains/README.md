@@ -59,9 +59,9 @@ The example uses docker to build and run the microservices.
 3. Build a Docker image for every microservice we have:
     
     ```bash
-    $ docker build -t trains/ui –f ui/Dockerfile .
-    $ docker build -t trains/routes –f routes/Dockerfile .
-    $ docker build -t trains/bookings –f bookings/Dockerfile .
+    $ docker build -t trains/ui -f ui/Dockerfile .
+    $ docker build -t trains/routes -f routes/Dockerfile .
+    $ docker build -t trains/bookings -f bookings/Dockerfile .
     ```
 4. Start the created containers with the appropriate environment variables that serve as the containers config:
     * `BASE_URI` should contain the microservice actual url (in our case we will use the Docker hosts IP)
